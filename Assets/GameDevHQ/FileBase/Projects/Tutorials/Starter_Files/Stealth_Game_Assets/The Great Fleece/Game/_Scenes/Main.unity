@@ -1869,6 +1869,65 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4142744574336076, guid: 8a9dec7327de344b3b25015a684c0c36, type: 3}
   m_PrefabInstance: {fileID: 133624972}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &136489320
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 136489321}
+  - component: {fileID: 136489322}
+  m_Layer: 0
+  m_Name: Sleeping_Guard_Cutscene
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &136489321
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 136489320}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 2120788729}
+  - {fileID: 1022543011}
+  m_Father: {fileID: 0}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!320 &136489322
+PlayableDirector:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 136489320}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_PlayableAsset: {fileID: 11400000, guid: 6f632c2f3759c6d4fbc6059e6242f012, type: 2}
+  m_InitialState: 1
+  m_WrapMode: 2
+  m_DirectorUpdateMode: 1
+  m_InitialTime: 0
+  m_SceneBindings:
+  - key: {fileID: 8620485296248769309, guid: 6f632c2f3759c6d4fbc6059e6242f012, type: 2}
+    value: {fileID: 2043896036}
+  m_ExposedReferences:
+    m_References:
+    - 0619491fb304de74cb274ed6ad2c915a: {fileID: 620476100}
+    - 5902f0ebf388be84d8dd0dbe80c968cd: {fileID: 1354958174}
+    - 677359aec4d2be64587865c7c67a54b1: {fileID: 1354958174}
+    - 1b3253eba7853954a89286cf125e8c33: {fileID: 620476100}
+    - 7769edec23e1b8e45b786eac56b9d4a6: {fileID: 1354958174}
+    - 38099fbf8994f7d4a9ff1770fc469b1f: {fileID: 620476100}
 --- !u!1001 &147734352
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -14207,14 +14266,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 620476099}
-  m_LocalRotation: {x: -0.0380451, y: 0.9499047, z: -0.12787084, w: -0.2826354}
-  m_LocalPosition: {x: 2.2562885, y: 2.4540825, z: -105.181465}
+  m_LocalRotation: {x: -0.06171607, y: 0.8810742, z: -0.11995155, w: -0.45333338}
+  m_LocalPosition: {x: 3.0960617, y: 2.702323, z: -105.93472}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 237228621}
-  m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_Father: {fileID: 1022543011}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &628789567
 GameObject:
@@ -20988,6 +21047,39 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4198699570841348, guid: ed248d326be934ce487358ba9ece5c29, type: 3}
   m_PrefabInstance: {fileID: 1019831194}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1022543010
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1022543011}
+  m_Layer: 0
+  m_Name: CM Virtual Cameras
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1022543011
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1022543010}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1354958175}
+  - {fileID: 620476101}
+  m_Father: {fileID: 136489321}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1025018733
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -25596,14 +25688,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1354958173}
-  m_LocalRotation: {x: 0.06579726, y: 0.6679415, z: -0.059473995, w: 0.7389099}
-  m_LocalPosition: {x: -6.4249763, y: 2.9250007, z: -106.84357}
+  m_LocalRotation: {x: 0.13314202, y: 0.73887324, z: -0.15309487, w: 0.64257413}
+  m_LocalPosition: {x: -4.6650167, y: 2.4979062, z: -108.13412}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 394070471}
-  m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_Father: {fileID: 1022543011}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1356905930
 PrefabInstance:
@@ -39807,7 +39899,6 @@ GameObject:
   - component: {fileID: 2043896033}
   - component: {fileID: 2043896031}
   - component: {fileID: 2043896030}
-  - component: {fileID: 2043896035}
   - component: {fileID: 2043896036}
   m_Layer: 0
   m_Name: Main Camera
@@ -39882,27 +39973,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2043896029}
-  m_LocalRotation: {x: -0.0380451, y: 0.9499047, z: -0.12787084, w: -0.2826354}
-  m_LocalPosition: {x: 2.2562885, y: 2.4540825, z: -105.181465}
+  m_LocalRotation: {x: 0.13314202, y: 0.73887324, z: -0.15309487, w: 0.64257413}
+  m_LocalPosition: {x: -4.6650167, y: 2.4979062, z: -108.13412}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2043896035
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2043896029}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ff26db721962cdf4a8edcdfa9a767d2a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  profile: {fileID: 11400000, guid: 1424e5ab37c0046868c6691a0d72cb38, type: 2}
 --- !u!114 &2043896036
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -40946,15 +41024,15 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 136489321}
     m_Modifications:
     - target: {fileID: 1347687833628048, guid: 49be4103b035b448cb277ad3ac4b48f7, type: 3}
       propertyPath: m_Name
-      value: Sleeping_Guard_Cutscene
+      value: Actors
       objectReference: {fileID: 0}
     - target: {fileID: 4328310163252698, guid: 49be4103b035b448cb277ad3ac4b48f7, type: 3}
       propertyPath: m_RootOrder
-      value: 7
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4328310163252698, guid: 49be4103b035b448cb277ad3ac4b48f7, type: 3}
       propertyPath: m_LocalPosition.x
@@ -40998,6 +41076,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 49be4103b035b448cb277ad3ac4b48f7, type: 3}
+--- !u!4 &2120788729 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4328310163252698, guid: 49be4103b035b448cb277ad3ac4b48f7, type: 3}
+  m_PrefabInstance: {fileID: 2120788728}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2122450894
 PrefabInstance:
   m_ObjectHideFlags: 0
