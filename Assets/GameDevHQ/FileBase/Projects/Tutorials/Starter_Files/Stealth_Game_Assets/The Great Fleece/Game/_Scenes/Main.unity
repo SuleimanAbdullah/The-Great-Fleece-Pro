@@ -12844,6 +12844,7 @@ GameObject:
   m_Component:
   - component: {fileID: 439995601}
   - component: {fileID: 439995602}
+  - component: {fileID: 439995603}
   m_Layer: 0
   m_Name: CM Darren Down Rope shot
   m_TagString: Untagged
@@ -12858,15 +12859,15 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 439995600}
-  m_LocalRotation: {x: 0.19556391, y: 0.7989718, z: -0.34681275, w: 0.45068818}
-  m_LocalPosition: {x: -12.889, y: 19.958, z: 34.447}
+  m_LocalRotation: {x: -0.2732694, y: -0.6950963, z: 0.32857051, w: -0.57810587}
+  m_LocalPosition: {x: -10.774, y: 15.767, z: 32.404}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1638709696}
   m_Father: {fileID: 1705888187}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 54, y: 462.861, z: -0.003}
 --- !u!114 &439995602
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12905,6 +12906,26 @@ MonoBehaviour:
         m_Calls: []
   m_LegacyBlendHint: 0
   m_ComponentOwner: {fileID: 1638709696}
+--- !u!95 &439995603
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 439995600}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1001 &442009551
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -13593,8 +13614,8 @@ MonoBehaviour:
   m_LookaheadTime: 0
   m_LookaheadSmoothing: 0
   m_LookaheadIgnoreY: 0
-  m_HorizontalDamping: 0.5
-  m_VerticalDamping: 0.5
+  m_HorizontalDamping: 18
+  m_VerticalDamping: 18
   m_ScreenX: 0.5
   m_ScreenY: 0.5
   m_DeadZoneWidth: 0.1
@@ -23179,8 +23200,8 @@ MonoBehaviour:
   m_LookaheadTime: 0
   m_LookaheadSmoothing: 0
   m_LookaheadIgnoreY: 0
-  m_HorizontalDamping: 0.5
-  m_VerticalDamping: 0.5
+  m_HorizontalDamping: 9
+  m_VerticalDamping: 9
   m_ScreenX: 0.5
   m_ScreenY: 0.5
   m_DeadZoneWidth: 0.1
@@ -24516,6 +24537,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1059284312}
   - component: {fileID: 1059284313}
+  - component: {fileID: 1059284314}
   m_Layer: 0
   m_Name: CM Daren Side shot
   m_TagString: Untagged
@@ -24530,15 +24552,15 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1059284311}
-  m_LocalRotation: {x: -0.0025539487, y: -0.6743628, z: -0.0023796523, w: 0.738392}
-  m_LocalPosition: {x: 4.94, y: 1.24, z: 30.91}
+  m_LocalRotation: {x: 0.010874396, y: -0.6271547, z: 0.008757311, w: 0.7787696}
+  m_LocalPosition: {x: 5.055, y: 1.973, z: 28.046}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 479602613}
   m_Father: {fileID: 1705888187}
   m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: -0.4, y: -84.81, z: -0.004}
+  m_LocalEulerAnglesHint: {x: 358.5049, y: 325.7846, z: 0.8931084}
 --- !u!114 &1059284313
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -24577,6 +24599,26 @@ MonoBehaviour:
         m_Calls: []
   m_LegacyBlendHint: 0
   m_ComponentOwner: {fileID: 479602613}
+--- !u!95 &1059284314
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1059284311}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1001 &1060184567
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -33782,8 +33824,8 @@ MonoBehaviour:
   m_LookaheadTime: 0
   m_LookaheadSmoothing: 0
   m_LookaheadIgnoreY: 0
-  m_HorizontalDamping: 0.5
-  m_VerticalDamping: 0.5
+  m_HorizontalDamping: 18
+  m_VerticalDamping: 18
   m_ScreenX: 0.5
   m_ScreenY: 0.5
   m_DeadZoneWidth: 0.1
@@ -34286,6 +34328,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1677547774}
   - component: {fileID: 1677547775}
+  - component: {fileID: 1677547776}
   m_Layer: 0
   m_Name: CM Rise to Reveal shot
   m_TagString: Untagged
@@ -34300,15 +34343,15 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1677547773}
-  m_LocalRotation: {x: -0.017905407, y: -0.9659911, z: 0.06967369, w: -0.24836732}
-  m_LocalPosition: {x: -11.485775, y: 1.7681794, z: 34.575672}
+  m_LocalRotation: {x: -0.017146198, y: -0.9726999, z: 0.076562665, w: -0.21840125}
+  m_LocalPosition: {x: -9.741, y: 3.396, z: 35.18}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 996576515}
   m_Father: {fileID: 1705888187}
   m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 9, y: 154.69, z: 359.995}
 --- !u!114 &1677547775
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -34347,6 +34390,26 @@ MonoBehaviour:
         m_Calls: []
   m_LegacyBlendHint: 0
   m_ComponentOwner: {fileID: 996576515}
+--- !u!95 &1677547776
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1677547773}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1001 &1679868433
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -35039,6 +35102,12 @@ PlayableDirector:
     value: {fileID: 2043896036}
   - key: {fileID: -5474642481580680209, guid: 2026cec54fbf86748a984bd90d522c85, type: 2}
     value: {fileID: 1003329405}
+  - key: {fileID: 8909882612466726030, guid: 2026cec54fbf86748a984bd90d522c85, type: 2}
+    value: {fileID: 439995603}
+  - key: {fileID: 125389009048319056, guid: 2026cec54fbf86748a984bd90d522c85, type: 2}
+    value: {fileID: 1059284314}
+  - key: {fileID: 6890689650697503329, guid: 2026cec54fbf86748a984bd90d522c85, type: 2}
+    value: {fileID: 1677547776}
   m_ExposedReferences:
     m_References:
     - 9222811583982504d8d965f1c0aa496d: {fileID: 618547786}
@@ -45750,8 +45819,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2043896029}
-  m_LocalRotation: {x: 0.002108762, y: -0.9940218, z: -0.019384325, w: -0.10742745}
-  m_LocalPosition: {x: -7.2519865, y: 1.6657548, z: 34.794186}
+  m_LocalRotation: {x: -0.008039665, y: -0.991651, z: 0.10300263, w: -0.07716322}
+  m_LocalPosition: {x: -2.5096529, y: 5.1185, z: -107.48595}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
