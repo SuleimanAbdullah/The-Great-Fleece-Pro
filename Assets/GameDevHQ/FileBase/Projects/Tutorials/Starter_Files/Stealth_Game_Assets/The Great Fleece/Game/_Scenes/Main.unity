@@ -23298,7 +23298,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4931160109606720, guid: 6c4f6fe08bd85514fa49752d89055191, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -4.55
+      value: -3.9
       objectReference: {fileID: 0}
     - target: {fileID: 4931160109606720, guid: 6c4f6fe08bd85514fa49752d89055191, type: 3}
       propertyPath: m_LocalPosition.y
@@ -23306,7 +23306,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4931160109606720, guid: 6c4f6fe08bd85514fa49752d89055191, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -3.75
+      value: -3.68
       objectReference: {fileID: 0}
     - target: {fileID: 4931160109606720, guid: 6c4f6fe08bd85514fa49752d89055191, type: 3}
       propertyPath: m_LocalRotation.w
@@ -35108,6 +35108,8 @@ PlayableDirector:
     value: {fileID: 1059284314}
   - key: {fileID: 6890689650697503329, guid: 2026cec54fbf86748a984bd90d522c85, type: 2}
     value: {fileID: 1677547776}
+  - key: {fileID: -18259764284023050, guid: 2026cec54fbf86748a984bd90d522c85, type: 2}
+    value: {fileID: 1931110177}
   m_ExposedReferences:
     m_References:
     - 9222811583982504d8d965f1c0aa496d: {fileID: 618547786}
@@ -38595,6 +38597,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1931110175}
   - component: {fileID: 1931110176}
+  - component: {fileID: 1931110177}
   m_Layer: 0
   m_Name: CM Rise From Marble
   m_TagString: Untagged
@@ -38609,15 +38612,15 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1931110174}
-  m_LocalRotation: {x: -0.005998658, y: -0.01345749, z: -0.000079940946, w: 0.99989146}
-  m_LocalPosition: {x: -0.807, y: 0.478, z: -59.243}
+  m_LocalRotation: {x: 0.040489096, y: 0.0015534674, z: -0.00009219863, w: 0.99917877}
+  m_LocalPosition: {x: -0.58579206, y: 0.53250444, z: -56.69}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1993357533}
   m_Father: {fileID: 1705888187}
   m_RootOrder: 4
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 355.359, y: -0.0002949872, z: 0.0003686654}
 --- !u!114 &1931110176
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -38656,6 +38659,26 @@ MonoBehaviour:
         m_Calls: []
   m_LegacyBlendHint: 0
   m_ComponentOwner: {fileID: 1993357533}
+--- !u!95 &1931110177
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1931110174}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1001 &1931166663
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -45819,8 +45842,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2043896029}
-  m_LocalRotation: {x: -0.008039665, y: -0.991651, z: 0.10300263, w: -0.07716322}
-  m_LocalPosition: {x: -2.5096529, y: 5.1185, z: -107.48595}
+  m_LocalRotation: {x: 0.011953189, y: -0.018323602, z: 0.0002190779, w: 0.9997606}
+  m_LocalPosition: {x: -0.653, y: -0.109, z: -54.255}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -46570,7 +46593,7 @@ Light:
   m_Type: 1
   m_Shape: 0
   m_Color: {r: 1, g: 0.95686275, b: 0.8392157, a: 1}
-  m_Intensity: 1
+  m_Intensity: 1.32
   m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
