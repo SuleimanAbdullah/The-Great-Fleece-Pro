@@ -17156,6 +17156,7 @@ GameObject:
   m_Component:
   - component: {fileID: 697326814}
   - component: {fileID: 697326815}
+  - component: {fileID: 697326816}
   m_Layer: 0
   m_Name: CM Look at Security Cameras
   m_TagString: Untagged
@@ -17178,7 +17179,7 @@ Transform:
   - {fileID: 2037332901}
   m_Father: {fileID: 1705888187}
   m_RootOrder: 8
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 355.8747, y: -0.0002688775, z: 0.000289797}
 --- !u!114 &697326815
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17217,6 +17218,26 @@ MonoBehaviour:
         m_Calls: []
   m_LegacyBlendHint: 0
   m_ComponentOwner: {fileID: 2037332901}
+--- !u!95 &697326816
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 697326813}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &703170577
 GameObject:
   m_ObjectHideFlags: 0
@@ -35128,6 +35149,8 @@ PlayableDirector:
     value: {fileID: 1677547776}
   - key: {fileID: -18259764284023050, guid: 2026cec54fbf86748a984bd90d522c85, type: 2}
     value: {fileID: 1931110177}
+  - key: {fileID: 879731109563661090, guid: 2026cec54fbf86748a984bd90d522c85, type: 2}
+    value: {fileID: 697326816}
   m_ExposedReferences:
     m_References:
     - 9222811583982504d8d965f1c0aa496d: {fileID: 618547786}
