@@ -900,7 +900,7 @@ MonoBehaviour:
     m_Start: 15.033333333333333
     m_ClipIn: 0
     m_Asset: {fileID: -3169839777884989592}
-    m_Duration: 5
+    m_Duration: 5.416666666666666
     m_TimeScale: 1
     m_ParentTrack: {fileID: -4144891254869518462}
     m_EaseInDuration: 0
@@ -930,10 +930,10 @@ MonoBehaviour:
     m_PreExtrapolationTime: 0
     m_DisplayName: CM Daren UnderDressed
   - m_Version: 1
-    m_Start: 20.03333333333333
+    m_Start: 20.45
     m_ClipIn: 0
     m_Asset: {fileID: 3919540477653964559}
-    m_Duration: 5
+    m_Duration: 3
     m_TimeScale: 1
     m_ParentTrack: {fileID: -4144891254869518462}
     m_EaseInDuration: 0
@@ -963,7 +963,7 @@ MonoBehaviour:
     m_PreExtrapolationTime: 0
     m_DisplayName: CM Daren Sees Guards
   - m_Version: 1
-    m_Start: 31.233333333333334
+    m_Start: 23.45
     m_ClipIn: 0
     m_Asset: {fileID: -2259136610275724582}
     m_Duration: 5
@@ -1014,7 +1014,7 @@ MonoBehaviour:
     m_PreExtrapolationTime: 0
     m_DisplayName: CM Darren Look at Guards
   - m_Version: 1
-    m_Start: 36.233333333333334
+    m_Start: 28.45
     m_ClipIn: 0
     m_Asset: {fileID: -8675338918129319852}
     m_Duration: 5
