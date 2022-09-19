@@ -1,9 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.AI;
 public class Player : MonoBehaviour
 {
+    private NavMeshAgent _agent;
+    private void Start()
+    {
+        _agent = GetComponent<NavMeshAgent>();
+    }
     void Update()
     {
         //if left click
@@ -17,8 +22,7 @@ public class Player : MonoBehaviour
             if (Physics.Raycast(ray, out hitInfo))
             {
                 Debug.Log(hitInfo.point);
-                //create object at floor position.
-               
+                _agent.destination = hitInfo.point;
             }
         }
     }
