@@ -5,25 +5,32 @@ using UnityEngine.AI;
 public class Player : MonoBehaviour
 {
     private NavMeshAgent _agent;
+    private Animator _animator;
+
     private void Start()
     {
         _agent = GetComponent<NavMeshAgent>();
+        _animator = GetComponentInChildren<Animator>();
     }
     void Update()
     {
-        //if left click
         if (Input.GetMouseButtonDown(0))
         {
             RaycastHit hitInfo;
-            //cast a ray from mouse position
             var ray = Camera.main.ScreenPointToRay(Input.mousePosition);
 
             //debug the floor position hit
             if (Physics.Raycast(ray, out hitInfo))
             {
-                Debug.Log(hitInfo.point);
                 _agent.destination = hitInfo.point;
+                _animator.SetBool("isWalking", true);
             }
+
         }
+        else if (_agent.remainingDistance <= _agent.stoppingDistance)
+        {
+            _animator.SetBool("isWalking", false);
+        }
+
     }
 }
