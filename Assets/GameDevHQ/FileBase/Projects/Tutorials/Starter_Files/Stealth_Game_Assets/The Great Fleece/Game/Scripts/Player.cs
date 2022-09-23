@@ -6,6 +6,7 @@ public class Player : MonoBehaviour
 {
     private NavMeshAgent _agent;
     private Animator _animator;
+    private Vector3 _targetPosition;
 
     private void Start()
     {
@@ -19,15 +20,16 @@ public class Player : MonoBehaviour
             RaycastHit hitInfo;
             var ray = Camera.main.ScreenPointToRay(Input.mousePosition);
 
-            //debug the floor position hit
             if (Physics.Raycast(ray, out hitInfo))
             {
                 _agent.destination = hitInfo.point;
                 _animator.SetBool("isWalking", true);
+                _targetPosition = hitInfo.point;
             }
-
         }
-        else if (_agent.remainingDistance <= _agent.stoppingDistance)
+
+        float distance = Vector3.Distance(transform.position, _targetPosition);
+        if (distance < 1.0)
         {
             _animator.SetBool("isWalking", false);
         }
