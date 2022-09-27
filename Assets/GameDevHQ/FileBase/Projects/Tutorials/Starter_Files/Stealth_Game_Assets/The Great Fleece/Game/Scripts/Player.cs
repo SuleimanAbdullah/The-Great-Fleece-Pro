@@ -30,7 +30,6 @@ public class Player : MonoBehaviour
         }
 
         float distance = Vector3.Distance(transform.position, _targetPosition);
-        Debug.Log("distance checked : " + distance);
         if (distance < 1.0)
         {
             _animator.SetBool("isWalking", false);
