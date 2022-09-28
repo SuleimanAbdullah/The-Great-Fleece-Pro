@@ -35,15 +35,21 @@ public class GuardAI : MonoBehaviour
 
     private IEnumerator WaitBeforeMoving()
     {
-        yield return new WaitForSeconds(Random.Range(2f, 5f));
-        _targetReached = false;
 
+        //stop a point a
+        //and stop at point c 
         if (_isReversing == false)
         {
+            if (_currentWayPointID == 0)
+            {
+                yield return new WaitForSeconds(Random.Range(2f, 5f));
+            }
             _currentWayPointID++;
             if (_currentWayPointID == _wayPoints.Count)
             {
+                _currentWayPointID = 2;
                 _isReversing = true;
+                yield return new WaitForSeconds(Random.Range(2f, 5f));
             }
         }
 
@@ -52,9 +58,10 @@ public class GuardAI : MonoBehaviour
             _currentWayPointID--;
             if (_currentWayPointID < 0)
             {
-                _isReversing = false;
                 _currentWayPointID = 0;
+                _isReversing = false;
             }
         }
+        _targetReached = false;
     }
 }
