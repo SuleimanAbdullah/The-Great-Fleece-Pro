@@ -18001,6 +18001,7 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   _currentWayPointID: 0
+  _isReversing: 0
 --- !u!1001 &643244178
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -30861,6 +30862,7 @@ MonoBehaviour:
   - {fileID: 4423841308630942}
   - {fileID: 590074339}
   _currentWayPointID: 0
+  _isReversing: 0
 --- !u!1 &1276992674
 GameObject:
   m_ObjectHideFlags: 0
@@ -49635,8 +49637,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2043896029}
-  m_LocalRotation: {x: 0.35130024, y: -0.121250436, z: 0.04593768, w: 0.92724115}
-  m_LocalPosition: {x: 6.9, y: 10.6, z: 0}
+  m_LocalRotation: {x: 0.008843776, y: -0.676052, z: 0.008110712, w: 0.73675627}
+  m_LocalPosition: {x: -0.7028053, y: 1.2320966, z: 29.433226}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -51537,6 +51539,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _wayPoints: []
   _currentWayPointID: 0
+  _isReversing: 0
 --- !u!1 &2137163819
 GameObject:
   m_ObjectHideFlags: 0
