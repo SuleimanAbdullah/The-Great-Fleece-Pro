@@ -13,9 +13,16 @@ public class GuardAI : MonoBehaviour
     private bool _targetReached;
     [SerializeField]
     private bool _isReversing;
+    private Animator _animator;
     void Start()
     {
         _agent = GetComponent<NavMeshAgent>();
+        _animator = GetComponent<Animator>();
+        if (_animator != null)
+        {
+            _animator.SetBool("isWalking", true);
+        }
+
     }
 
     void Update()
@@ -24,6 +31,16 @@ public class GuardAI : MonoBehaviour
         {
             _agent.SetDestination(_wayPoints[_currentWayPointID].position);
             float distance = Vector3.Distance(transform.position, _wayPoints[_currentWayPointID].position);
+
+            if (distance <1.0)
+            {
+                _animator.SetBool("isWalking", false);
+
+            }
+            else
+            {
+                _animator.SetBool("isWalking", true);
+            }
 
             if (distance < 1.0 && _targetReached == false)
             {
@@ -35,19 +52,27 @@ public class GuardAI : MonoBehaviour
 
     private IEnumerator WaitBeforeMoving()
     {
-
-        //stop a point a
-        //and stop at point c 
         if (_isReversing == false)
         {
+
             if (_currentWayPointID == 0)
             {
+                if (_animator != null)
+                {
+                    _animator.SetBool("isWalking", false);
+                }
                 yield return new WaitForSeconds(Random.Range(2f, 5f));
             }
+
             _currentWayPointID++;
+
             if (_currentWayPointID == _wayPoints.Count)
             {
-                _currentWayPointID = 2;
+                _currentWayPointID -= 1;
+                if (_animator != null)
+                {
+                    _animator.SetBool("isWalking", false);
+                }
                 _isReversing = true;
                 yield return new WaitForSeconds(Random.Range(2f, 5f));
             }
