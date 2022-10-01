@@ -7,6 +7,10 @@ public class Player : MonoBehaviour
     private NavMeshAgent _agent;
     private Animator _animator;
     private Vector3 _targetPosition;
+    [SerializeField]
+    private GameObject _coinPrefab;
+    private bool _isCoinTossed;
+
 
     private void Start()
     {
@@ -33,6 +37,27 @@ public class Player : MonoBehaviour
         if (distance < 1.0)
         {
             _animator.SetBool("isWalking", false);
+        }
+
+        //if right click
+        //Instantiate a coin at mouse position
+        //play sound for coin effect for coin drop
+
+        if (Input.GetMouseButtonDown(1))
+        {
+            Debug.Log("Button Pressed: ");
+            RaycastHit hitInfo;
+            var ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+
+            if (Physics.Raycast(ray,out hitInfo))
+            {
+                if (_isCoinTossed ==false)
+                {
+                    Instantiate(_coinPrefab, hitInfo.point, Quaternion.identity);
+                    _isCoinTossed = true;
+                }
+                
+            }
         }
     }
 }

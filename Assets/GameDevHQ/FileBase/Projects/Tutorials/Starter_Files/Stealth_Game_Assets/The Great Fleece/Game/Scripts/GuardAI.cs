@@ -31,8 +31,7 @@ public class GuardAI : MonoBehaviour
         {
             _agent.SetDestination(_wayPoints[_currentWayPointID].position);
             float distance = Vector3.Distance(transform.position, _wayPoints[_currentWayPointID].position);
-
-            if (distance <1.0)
+            if (distance < 1.0 && (_currentWayPointID == 0 || _currentWayPointID == _wayPoints.Count - 1))
             {
                 _animator.SetBool("isWalking", false);
 
@@ -57,11 +56,7 @@ public class GuardAI : MonoBehaviour
 
             if (_currentWayPointID == 0)
             {
-                if (_animator != null)
-                {
-                    _animator.SetBool("isWalking", false);
-                }
-                yield return new WaitForSeconds(Random.Range(2f, 5f));
+                yield return new WaitForSeconds(Random.Range(2f, 6f));
             }
 
             _currentWayPointID++;
@@ -69,12 +64,8 @@ public class GuardAI : MonoBehaviour
             if (_currentWayPointID == _wayPoints.Count)
             {
                 _currentWayPointID -= 1;
-                if (_animator != null)
-                {
-                    _animator.SetBool("isWalking", false);
-                }
+                yield return new WaitForSeconds(Random.Range(2f, 6f));
                 _isReversing = true;
-                yield return new WaitForSeconds(Random.Range(2f, 5f));
             }
         }
 
