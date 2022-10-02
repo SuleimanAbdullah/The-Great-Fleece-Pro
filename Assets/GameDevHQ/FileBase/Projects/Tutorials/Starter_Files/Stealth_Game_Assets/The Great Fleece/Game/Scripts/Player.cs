@@ -10,8 +10,7 @@ public class Player : MonoBehaviour
     [SerializeField]
     private GameObject _coinPrefab;
     private bool _isCoinTossed;
-
-
+   
     private void Start()
     {
         _agent = GetComponent<NavMeshAgent>();
@@ -39,25 +38,37 @@ public class Player : MonoBehaviour
             _animator.SetBool("isWalking", false);
         }
 
-        //if right click
-        //Instantiate a coin at mouse position
-        //play sound for coin effect for coin drop
-
         if (Input.GetMouseButtonDown(1))
         {
             Debug.Log("Button Pressed: ");
             RaycastHit hitInfo;
             var ray = Camera.main.ScreenPointToRay(Input.mousePosition);
 
-            if (Physics.Raycast(ray,out hitInfo))
+            if (Physics.Raycast(ray, out hitInfo))
             {
-                if (_isCoinTossed ==false)
+                if (_isCoinTossed == false)
                 {
-                    Instantiate(_coinPrefab, hitInfo.point, Quaternion.identity);
+                   GameObject coin = Instantiate(_coinPrefab, hitInfo.point, Quaternion.identity);
+                    SendAIToCoinSpot(coin.transform.position);
                     _isCoinTossed = true;
                 }
-                
             }
+        }
+    }
+
+    void SendAIToCoinSpot(Vector3 coinPos)
+    {
+        GameObject[] guards = GameObject.FindGameObjectsWithTag("Guard1");
+        foreach (var guard in guards)
+        {
+
+            NavMeshAgent currentAgent = guard.GetComponent<NavMeshAgent>();
+            GuardAI currentGuard = guard.GetComponent<GuardAI>();
+            Animator anim = guard.GetComponent<Animator>();
+            currentAgent.SetDestination(coinPos);
+            currentGuard._isCoinTossed = true;
+            anim.SetBool("isWalking", true);
+            currentGuard._coinPos = coinPos;
         }
     }
 }

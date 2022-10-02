@@ -3104,7 +3104,7 @@ GameObject:
   - component: {fileID: 180323196}
   m_Layer: 0
   m_Name: Point_E
-  m_TagString: Guard1
+  m_TagString: Untagged
   m_Icon: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14689,8 +14689,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 1.19, y: 1, z: 0.5159157}
+  m_Center: {x: 1.2041827e-15, y: 0, z: -0.30508763}
 --- !u!23 &471988657
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -15576,7 +15576,7 @@ GameObject:
   - component: {fileID: 500812698}
   m_Layer: 0
   m_Name: Point_H
-  m_TagString: Guard1
+  m_TagString: Untagged
   m_Icon: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -17313,7 +17313,7 @@ GameObject:
   - component: {fileID: 590074339}
   m_Layer: 0
   m_Name: Point_C
-  m_TagString: Guard1
+  m_TagString: Untagged
   m_Icon: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -18153,7 +18153,7 @@ NavMeshAgent:
   m_Radius: 0.5
   m_Speed: 3.5
   m_Acceleration: 8
-  avoidancePriority: 50
+  avoidancePriority: 0
   m_AngularSpeed: 120
   m_StoppingDistance: 0
   m_AutoTraverseOffMeshLink: 1
@@ -18182,6 +18182,8 @@ MonoBehaviour:
   - {fileID: 500812698}
   _currentWayPointID: 0
   _isReversing: 0
+  _isCoinTossed: 0
+  _coinPos: {x: 0, y: 0, z: 0}
 --- !u!95 &631136207
 Animator:
   serializedVersion: 4
@@ -19519,7 +19521,7 @@ GameObject:
   - component: {fileID: 715274855}
   m_Layer: 0
   m_Name: Point_G
-  m_TagString: Guard1
+  m_TagString: Untagged
   m_Icon: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -21839,8 +21841,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 1.19, y: 1, z: 0.63094556}
+  m_Center: {x: -3.285878e-15, y: 0, z: -0.24374098}
 --- !u!23 &777640167
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -31177,9 +31179,9 @@ NavMeshAgent:
   m_Radius: 0.5
   m_Speed: 3.5
   m_Acceleration: 8
-  avoidancePriority: 50
+  avoidancePriority: 0
   m_AngularSpeed: 120
-  m_StoppingDistance: 0.1
+  m_StoppingDistance: 0
   m_AutoTraverseOffMeshLink: 1
   m_AutoBraking: 0
   m_AutoRepath: 1
@@ -31205,6 +31207,8 @@ MonoBehaviour:
   - {fileID: 590074339}
   _currentWayPointID: 0
   _isReversing: 0
+  _isCoinTossed: 0
+  _coinPos: {x: 0, y: 0, z: 0}
 --- !u!95 &1275949404
 Animator:
   serializedVersion: 4
@@ -33396,7 +33400,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1386228916}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0, y: 0.789, z: 1.518}
+  m_LocalPosition: {x: 0.159, y: 0.789, z: 1.518}
   m_LocalScale: {x: 1, y: 1, z: 3}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -33414,8 +33418,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1.3313189, y: 1, z: 1}
-  m_Center: {x: -0.21668203, y: 0, z: -4.144284e-16}
+  m_Size: {x: 1.19, y: 1, z: 0.6608512}
+  m_Center: {x: -0.21668202, y: 0, z: -0.1478287}
 --- !u!23 &1386228919
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -35102,7 +35106,7 @@ GameObject:
   - component: {fileID: 1500054711}
   m_Layer: 0
   m_Name: Point_D
-  m_TagString: Guard1
+  m_TagString: Untagged
   m_Icon: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -35373,7 +35377,7 @@ GameObject:
   - component: {fileID: 1510304225}
   m_Layer: 0
   m_Name: Point_F
-  m_TagString: Guard1
+  m_TagString: Untagged
   m_Icon: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -52051,7 +52055,7 @@ NavMeshAgent:
   m_Radius: 0.5
   m_Speed: 3.5
   m_Acceleration: 8
-  avoidancePriority: 50
+  avoidancePriority: 0
   m_AngularSpeed: 120
   m_StoppingDistance: 0
   m_AutoTraverseOffMeshLink: 1
@@ -52077,6 +52081,8 @@ MonoBehaviour:
   - {fileID: 1500054711}
   _currentWayPointID: 0
   _isReversing: 0
+  _isCoinTossed: 0
+  _coinPos: {x: 0, y: 0, z: 0}
 --- !u!95 &2134403152
 Animator:
   serializedVersion: 4
@@ -52312,7 +52318,7 @@ GameObject:
   - component: {fileID: 4423840560431693}
   m_Layer: 0
   m_Name: Point_A
-  m_TagString: Guard1
+  m_TagString: Untagged
   m_Icon: {fileID: 3936346786652291628, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -52328,7 +52334,7 @@ GameObject:
   - component: {fileID: 4423841308630942}
   m_Layer: 0
   m_Name: Point_B
-  m_TagString: Guard1
+  m_TagString: Untagged
   m_Icon: {fileID: 2974397684917235467, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
