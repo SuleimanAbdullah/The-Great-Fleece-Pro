@@ -33,13 +33,14 @@ public class Player : MonoBehaviour
         }
 
         float distance = Vector3.Distance(transform.position, _targetPosition);
-        if (distance < 1.0)
+        if (distance < 3.0)
         {
             _animator.SetBool("isWalking", false);
         }
 
         if (Input.GetMouseButtonDown(1))
         {
+            
             Debug.Log("Button Pressed: ");
             RaycastHit hitInfo;
             var ray = Camera.main.ScreenPointToRay(Input.mousePosition);
@@ -48,7 +49,8 @@ public class Player : MonoBehaviour
             {
                 if (_isCoinTossed == false)
                 {
-                   GameObject coin = Instantiate(_coinPrefab, hitInfo.point, Quaternion.identity);
+                    _animator.SetTrigger("isThrowing");
+                    GameObject coin = Instantiate(_coinPrefab, hitInfo.point, Quaternion.identity);
                     SendAIToCoinSpot(coin.transform.position);
                     _isCoinTossed = true;
                 }
