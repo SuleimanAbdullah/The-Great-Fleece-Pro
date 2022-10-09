@@ -10,7 +10,7 @@ public class Player : MonoBehaviour
     [SerializeField]
     private GameObject _coinPrefab;
     private bool _isCoinTossed;
-   
+
     private void Start()
     {
         _agent = GetComponent<NavMeshAgent>();
@@ -40,8 +40,6 @@ public class Player : MonoBehaviour
 
         if (Input.GetMouseButtonDown(1))
         {
-            
-            Debug.Log("Button Pressed: ");
             RaycastHit hitInfo;
             var ray = Camera.main.ScreenPointToRay(Input.mousePosition);
 
@@ -63,7 +61,6 @@ public class Player : MonoBehaviour
         GameObject[] guards = GameObject.FindGameObjectsWithTag("Guard1");
         foreach (var guard in guards)
         {
-
             NavMeshAgent currentAgent = guard.GetComponent<NavMeshAgent>();
             GuardAI currentGuard = guard.GetComponent<GuardAI>();
             Animator anim = guard.GetComponent<Animator>();

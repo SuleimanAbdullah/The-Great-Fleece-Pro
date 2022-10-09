@@ -14,6 +14,7 @@ public class GrabKeyCardActivation : MonoBehaviour
         {
             _sleepingGuardCutScene.SetActive(true);
             _isCutSceneActivatedOnce = true;
+            GameManager.Instance.HasCard = true;
         }
     }
 }

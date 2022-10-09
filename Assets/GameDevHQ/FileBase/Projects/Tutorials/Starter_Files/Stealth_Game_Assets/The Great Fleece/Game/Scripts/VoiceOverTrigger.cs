@@ -5,7 +5,7 @@ using UnityEngine;
 public class VoiceOverTrigger : MonoBehaviour
 {
     [SerializeField]
-    private AudioSource _audioSource;
+    private AudioClip _clipToPlay;
     private bool _isVoiceOverPlayedOnce;
 
     private void OnTriggerEnter(Collider other)
@@ -13,7 +13,7 @@ public class VoiceOverTrigger : MonoBehaviour
         if (other.tag == "Player" && _isVoiceOverPlayedOnce == false)
         {
 
-            _audioSource.Play();
+            AudioManager.Instance.PlayVoiceOver(_clipToPlay);
             _isVoiceOverPlayedOnce = true;
         }
     }
