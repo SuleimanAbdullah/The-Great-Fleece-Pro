@@ -18,9 +18,6 @@ public class UIManager : MonoBehaviour
         }
     }
 
-    [SerializeField]
-    private int _sceneIndex;
-
     private void Awake()
     {
         _instance = this;
@@ -28,7 +25,7 @@ public class UIManager : MonoBehaviour
 
     public void Restart()
     {
-        SceneManager.LoadScene(_sceneIndex);
+        SceneManager.LoadScene("Main");
     }
 
     public void QuitGame()
