@@ -8,7 +8,6 @@ public class MainMenu : MonoBehaviour
     public void StartGame()
     {
         SceneManager.LoadScene("Main");
-        Debug.Log("AM I Crazy");
     }
 
     public void QuitGame()
