@@ -25,7 +25,7 @@ public class LoadLevel : MonoBehaviour
         while (operation.isDone == false)
         {
             _progressBar.fillAmount = operation.progress;
-            yield return null;
+            yield return new WaitForEndOfFrame();
         }
           //progress bar fill amount = operaton progress
           //wait end of the frame
